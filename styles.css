@@ -927,6 +927,12 @@ main section[id],
   font-weight: 600;
 }
 
+.permit-status-ready {
+  color: #176548;
+  background: #e8f4ec;
+  border-color: #b7d9c2;
+}
+
 .permit-availability {
   margin: 0 0 24px;
   padding: 16px 20px;
