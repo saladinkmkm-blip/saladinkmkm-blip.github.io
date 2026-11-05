@@ -885,6 +885,293 @@ p {
   outline-offset: 3px;
 }
 
+main section[id],
+#permit-preparation,
+#permit-admin {
+  scroll-margin-top: 100px;
+}
+
+.main-nav .nav-permit {
+  color: var(--brand);
+  font-weight: 700;
+}
+
+.quick-card-permit {
+  border-color: #1a56db;
+  background: #eff6ff;
+}
+
+.work-plans-section {
+  background: #f5f8fc;
+}
+
+.permit-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.permit-heading .section-heading {
+  margin-bottom: 28px;
+}
+
+.permit-status {
+  flex-shrink: 0;
+  padding: 7px 12px;
+  color: #7c4a03;
+  background: #fff3d6;
+  border: 1px solid #e9d3a1;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.permit-availability {
+  margin: 0 0 24px;
+  padding: 16px 20px;
+  color: #334155;
+  background: #e8f0ff;
+  border-left: 3px solid var(--brand);
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.work-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.work-plan-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 24px rgba(23, 32, 51, 0.04);
+}
+
+.work-plan-card:hover {
+  transform: none;
+}
+
+.work-plan-admin {
+  background: #fbfcfe;
+}
+
+.work-plan-card .card-number {
+  width: auto;
+  height: auto;
+  margin-bottom: 0;
+  padding: 8px 12px;
+}
+
+.work-plan-card h3,
+.work-plan-card p {
+  margin: 0;
+}
+
+.work-plan-card .btn {
+  width: 100%;
+}
+
+.permit-feature-list {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 8px;
+  padding-left: 20px;
+  color: #475569;
+}
+
+.permit-feature-list li::marker {
+  color: var(--brand);
+}
+
+.permit-card-actions {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.permit-pending:disabled {
+  color: #475569;
+  background: #e9eef5;
+  border: 1px solid #cbd5e1;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.permit-text-link {
+  color: var(--brand-dark);
+  font-weight: 600;
+  text-underline-offset: 4px;
+}
+
+.permit-text-link:hover {
+  text-decoration: underline;
+}
+
+.permit-access-note {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.permit-workflow {
+  margin-top: 32px;
+  padding: 28px 32px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.permit-workflow h3,
+.permit-support-grid h3 {
+  margin: 0 0 24px;
+  color: var(--navy);
+  font-size: 1.25rem;
+}
+
+.permit-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.permit-steps li {
+  display: flex;
+  gap: 12px;
+}
+
+.permit-steps li > span {
+  display: grid;
+  place-items: center;
+  flex: 0 0 34px;
+  height: 34px;
+  color: var(--brand);
+  background: #eff6ff;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.permit-steps strong {
+  display: block;
+  margin: 3px 0 6px;
+  color: var(--navy);
+}
+
+.permit-steps p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.permit-safety-note {
+  margin: 24px 0 0;
+  padding-top: 20px;
+  color: #475569;
+  border-top: 1px solid var(--line);
+  font-size: 0.92rem;
+}
+
+.permit-support-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-top: 48px;
+}
+
+.permit-checklist {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.permit-checklist li {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 12px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.permit-checklist span {
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.permit-faq details {
+  border-bottom: 1px solid #d7dee9;
+}
+
+.permit-faq summary {
+  padding: 16px 0;
+  color: var(--navy);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.permit-faq details p {
+  margin: 0;
+  padding: 0 0 20px;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 960px) {
+  .permit-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .permit-heading {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .permit-status {
+    margin-bottom: 20px;
+  }
+
+  .permit-support-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 680px) {
+  .work-plan-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-plan-card,
+  .permit-workflow {
+    padding: 24px;
+  }
+
+  .permit-steps {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .permit-steps p br {
+    display: none;
+  }
+
+  .permit-checklist li {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}
+
 @media (max-width: 1120px) {
   .header-inner {
     grid-template-columns: auto 1fr auto;
@@ -940,6 +1227,7 @@ p {
 
   .header-inner {
     width: min(100% - 24px, 1280px);
+    grid-template-columns: 1fr auto;
     gap: 12px;
   }
 
@@ -1024,5 +1312,33 @@ p {
 
   .hero-actions .btn {
     width: 100%;
+  }
+
+  .quick-section .quick-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .quick-card {
+    min-height: 116px;
+    padding: 18px;
+  }
+
+  .quick-card-permit {
+    grid-column: 1 / -1;
+    min-height: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
   }
 }
